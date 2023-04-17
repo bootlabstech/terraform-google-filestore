@@ -37,8 +37,3 @@ variable "reserved_ip_range" {
   description = "A /29 CIDR block that identifies the range of IP addresses reserved for this instance."
 }
 
-variable "connect_mode" {
-  type = string
-  description = "The network connect mode of the Filestore instance. If not provided, the connect mode defaults to DIRECT_PEERING. Default value is DIRECT_PEERING. Possible values are DIRECT_PEERING and PRIVATE_SERVICE_ACCESS"
-  default = "PRIVATE_SERVICE_ACCESS"
-}
