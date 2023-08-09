@@ -29,11 +29,11 @@ variable "network" {
 variable "modes" {
   type        = list(string)
   description = " IP versions for which the instance has IP addresses assigned. VEach of values may be ADDRESS_MODE_UNSPECIFIED, MODE_IPV4, and MODE_IPV6"
-  default = ["MODE_IPV4"]
+  default     = ["MODE_IPV4"]
 }
 
 variable "reserved_ip_range" {
-  type = string
+  type        = string
   description = "A /29 CIDR block that identifies the range of IP addresses reserved for this instance."
 }
 

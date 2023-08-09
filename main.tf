@@ -18,4 +18,7 @@ resource "google_filestore_instance" "instance" {
     reserved_ip_range = var.reserved_ip_range
     connect_mode      = "PRIVATE_SERVICE_ACCESS"
   }
+  lifecycle {
+    ignore_changes = [labels]
+  }
 }
